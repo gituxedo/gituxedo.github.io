@@ -1,0 +1,179 @@
+<!doctype html>
+
+<head>
+	<title>Sylvia Jin</title>
+	<!-- 
+
+Sentra Template
+
+https://templatemo.com/tm-518-sentra
+
+-->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/light-box.css">
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+	<!--
+		<ul class="dropdown" id="nav">
+		<li><a href="index.html">Main</a></li>
+		<li><a href="resume.pdf">Resume</a></li>
+		<li><a href="notes.html">Class Notes</a></li>
+		<li><a href="bla">LinkedIn</a></li>
+		</ul>
+	-->
+	        <div class="sidebar-navigation hidde-sm hidden-xs">
+            <div class="logo">
+                <a href="#">Sylvia Jin</a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#top">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Projects
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="#skills">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Skills
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="#video">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Teaching Demo
+                        </a>
+                    </li>
+<!--                     <li>
+                        <a href="#coursework">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Coursework (TBD)
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="#contact">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+<!--             <ul class="social-icons">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+            </ul> -->
+        </div>
+            <div class="page-content">
+            <section id="featured" class="content-section">
+                <div class="section-heading">
+                    <h1><em>About</em><br>Me</h1>
+                    <p>Hi! I'm Sylvia, a senior at UC Berkeley studying Math <!-- <small><small><small>&amp; CS</small></small></small>  -->with a minor in Electrical Engineering. In my free time, I like to tinker with electronics and try to resurrect devices that would otherwise end up in e-waste.</p>
+                </div>
+            </section>
+            <section id="projects" class="content-section">
+                <div class="section-heading">
+                    <h1>Recent<br><em>Projects</em></h1>
+                    <p>A link to my project portfolio can be found <a href="Project Portfolio.pdf">here</a>, with brief descriptions below:</p>
+                </div>
+                <div class="section-content">
+                    <div class="masonry">
+                        <div class="row">
+                            <div class="item">
+							  <p>This little programmable “bug” can travel in a straight line, go in circles, or follow a line! All packed in a 1” x 1.5” board, powered by a single 1.5V button-cell with the heart of an ATTiny1616 microcontroller. It reads from 2 reflectance sensors, controlling a motor driver hooked up to 2 tiny motors, acting as the “wheels” for this bug.</p>
+								<div class="container">
+								  <img src="img/microbug_front.jpg" alt="Microbug" class="image">
+								  <div class="middle">
+								    <div class="text">Light-following Microbug</div>
+								  </div>
+							  	</div>
+                        </div>
+						  <p>For our graduate algorithms class, we implemented the Laplace mechanism of differential privacy, which adds some noise (according to the Laplace distribution) to any queries you make to your database. The purpose is to allow collection of <em>aggregate statistics</em> from databases, but NOT allow information that de-anonymizes any <em>individual</em>. Mathematically, it means that removal of any one input record from any possible input dataset changes the probability the randomized computation produces any possible output by at most a factor of exp(ε).</p>
+						  <p>Below, we used this on a real dataset (UCI’s dataset of adults’ ages) with varying values of ε.  The blue samples are real data, while the orange overlay shows the differentially-private results. As shown, using smaller ε increases privacy but gives less accurate results.</p>
+							<div class="container">
+							  <img src="img/diffprivacy.png" alt="Differential Privacy" class="image">
+							  <div class="middle">
+							    Differential Privacy implementation
+							  </div>
+						  	</div>
+                        </div>
+                    </div>
+                </div>            
+            </section>
+            <section id="video" class="content-section">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading">
+                            <h1><em>Teaching demo</em></h1>
+                            <p>Video walkthrough of modular arithmetic problems, made for Summer 2021 iteration of CS 70 (Discrete Math and Probability) at Berkeley.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="box-video">
+                            <div class="video-container">
+                            	<iframe width="100%" height="520" src="https://www.youtube.com/embed/sKiIh3mzdnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="content-section">
+            	<div id="contact-content">
+				    <div class="section-heading">
+				        <h1><em>Contact</em></h1>
+				        <p><a href="mailto:swjin@berkeley.edu">Email me</a>, or send me a message on <a href="https://www.linkedin.com/in/%F0%9F%A4%94-sylvia-jin-56320b133/">LinkedIn</a>!</p>
+				    </div>
+				</div>
+            </section>
+            <section class="footer">
+                <p>Template from: <a href="https://www.free-css.com/free-css-templates/page258/sentra">TemplateMo</a></p>
+            </section>
+        </div>
+	
+
+	<ul class="dropdown" id="nav">
+		<li><a href="Project Portfolio.pdf">Project Portfolio</a></li>
+	</ul>
+	<p>Technical Skills:</p>
+	<ul class="dropdown">
+		<li>PCB Design</li>
+		<li>Software for Test Automation</li>
+		<li>Data Analysis and Visualization</li>
+		<li>Proficiency in basic power tools, laser cutter, bandsaw. Would like to learn how to use a lathe</li>
+		<li>Not web design</li>
+	</ul>
+	<p>Non-technical Skills:</p>
+	<ul class="dropdown">
+		<li>Teaching!</li>
+		<li>Technical communication</li>
+	</ul>
+	</div>
+	</body>
+
